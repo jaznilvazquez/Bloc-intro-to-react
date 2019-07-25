@@ -1,30 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <title>My First React app</title>
+    <meta charset="UTF-8" />
+    <title>My first React project</title>
   </head>
   <body>
-
-    <div id="app"></div>
-
+    <div id="name"></div>
+    
+    <h2>My First SOLO React Component</h2>
+    <p>This page is my attempt at me creating a component.</p>
+    <p>
+      I built this component myself.
+      <div class="like_button_container" data-commentid="1"></div>
+    </p>
+   
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+  
     <script src="https://cdnjs.cloudflare.com/ajax/libs/react/16.1.0/umd/react.development.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.1.0/umd/react-dom.development.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script>
 
     <script type="text/babel">
-       class Statement extends React.Component {
+       class Greeting extends React.Component {
          render() {
            return (
              <div>
-               <h1>I did it!</h1>
+               <h1>Hello Jazzy Fizzle</h1>
              </div>
            );
          }
        }
  
        ReactDOM.render(
-         <Statement />, document.getElementById('app')
+         <Greeting />, document.getElementById('name')
        );
-    </script>
+ </script>
   </body>
 </html>
